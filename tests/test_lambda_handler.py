@@ -1,9 +1,9 @@
-import unittest
 import sys
-import os
-from calculate_student_grade.lambda_handler import handle
+import unittest
 
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, './calculate_student_grade')
+
+from calculate_student_grade.lambda_handler import handle
 
 
 class TestReturnCorrectResponse(unittest.TestCase):
