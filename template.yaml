@@ -5,6 +5,7 @@ Resources:
   CalculateStudentGrade:
     Type: AWS::Serverless::Function
     Properties:
+      FunctionName: calculate-sudent-grade
       CodeUri: calculate_student_grade/
       Handler: lambda_handler.handle
       Runtime: python3.8

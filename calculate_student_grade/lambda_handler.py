@@ -8,9 +8,6 @@ def handle(event, context):
 def produce_result(calculate_function, lecture_grade, exercise_grade, workshop_grade):
     final_grade, has_passed = calculate_function(lecture_grade, exercise_grade, workshop_grade)
     return {
-        'statusCode': 200,
-        'body': {
-            'finalGrade': final_grade,
-            'hasPassed': has_passed
-        }
+        'finalGrade': final_grade,
+        'hasPassed': has_passed
     }
