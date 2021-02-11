@@ -4,7 +4,7 @@ WORKSHOP_WEIGHT = 0.5
 GRADE_TO_PASS = 3
 
 
-def calculate(ls):
+def calculate(lecture_grade, exercise_grade, workshop_grade):
     raw_final_grade = LECTURE_WEIGHT * lecture_grade \
                       + EXERCISE_WEIGHT * exercise_grade \
                       + WORKSHOP_WEIGHT * workshop_grade
