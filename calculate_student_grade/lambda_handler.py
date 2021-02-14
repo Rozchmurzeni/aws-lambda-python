@@ -2,7 +2,7 @@ from calculator import calculate
 
 
 def handle(event, context):
-    return produce_result(calculate, event['lectureGrade'], event['exerciseGrade'], event['workshopGrade'])
+    return produce_result(event['lectureGrade'], event['exerciseGrade'], event['workshopGrade'])
 
 
 def produce_result(lecture_grade, exercise_grade, workshop_grade):
